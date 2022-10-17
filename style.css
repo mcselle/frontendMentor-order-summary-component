@@ -6,6 +6,7 @@
   --clr-background: hsl(225, 100%, 94%);
   --clr-primary: hsl(245, 75%, 52%);
 
+  --clr-white: #fff;
   --clr-shadow: hsl(225, 100%, 98%);
   --clr-icon: hsl(224, 23%, 55%);
   --clr-music-icon: hsl(223, 47%, 23%);
@@ -13,4 +14,124 @@
 
 body{
   background-color: var(--clr-background);
+  font-family: 'Red Hat Display' ;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--clr-icon);
+  height: 100vh;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+img{
+  width: 100%;
+}
+
+.card{
+  width: 330px;
+  background-color: var(--clr-white);
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.container{
+  padding: 0 1.5em 1.5em 1.5em ;
+  text-align: center;
+}
+
+h1{
+  font-size: 1.5em;
+  font-weight: 800;
+  color: black;
+}
+
+button{
+  width: 100%;
+  padding: 1em;
+  border-radius: 1em;
+  border: none;
+  margin: .25em;
+  font-size: 1em;
+  font-family: 'Red Hat Display';
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary{
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  box-shadow: 0 16px 17px 3px rgba(0, 0, 220, 0.130);
+  z-index: 1000;
+  position: relative;
+}
+
+
+.primary:hover{
+  opacity: .75;
+}
+
+.secondary{
+  background-color: var(--clr-white);
+  color: var(--clr-icon);
+}
+
+.secondary:hover{
+  color: black;
+}
+
+.plan
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: var(--clr-shadow);
+  padding: 1em;
+  border-radius: 1em;
+  margin: 1em 0;
+}
+
+.plan a{
+  margin-left: auto;
+}
+
+a{
+  font-weight: 800;
+  font-size: .9em;
+}
+
+a:hover{
+  text-decoration: none;
+  opacity: .75;
+}
+
+.plan-name{
+  text-align: center;
+  font-size: .9;
+  margin-left: 1em;
+}
+
+.icon{
+  width: 45px;
+}
+
+strong{
+  color: black;
+}
+
+@media only screen and (min-width: 400px) {
+  .card{
+    width: 350px;
+  }
+  .container{
+    padding: 1em 2em 2em 2em;
+  }
+  button{
+    font-size: .8em;
+  }
 }
