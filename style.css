@@ -1,0 +1,16 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-background: hsl(225, 100%, 94%);
+  --clr-primary: hsl(245, 75%, 52%);
+
+  --clr-shadow: hsl(225, 100%, 98%);
+  --clr-icon: hsl(224, 23%, 55%);
+  --clr-music-icon: hsl(223, 47%, 23%);
+}
+
+body{
+  background-color: var(--clr-background);
+}
